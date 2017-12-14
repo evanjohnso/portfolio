@@ -28,10 +28,6 @@ header.masthead>.overlay {
   }
 }
 
-.rounded-circle:hover {
-  opacity: .5;
-  cursor: pointer;  
-}
 footer div:first-child {
   width: fit-content;
 }
@@ -42,4 +38,37 @@ footer div:first-child div {
 footer div:first-child div p {
   text-align: center;
   color: red;
+}
+
+.img_description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rounded_circle:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.img_wrap:hover .img_description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.img_description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img_wrap:hover .img_description {
+  transform: translateY(0);
 }
