@@ -14,8 +14,8 @@
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container" id="home">
-        <a class="navbar-brand" href="#home">Home</a>
+      <div class="container">
+        <a class="navbar-brand nav-link" href="#home">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +40,7 @@
       </div>
     </nav>
 
-    <header class="masthead">
+    <header class="masthead" id="home">
       <div class="overlay">
         <div class="container">
           <h1 class="display-1 text-white">Evan Johnson</h1>
@@ -114,16 +114,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-      $(document).ready( () => {
-        $('.nav-link').click( (e) => {
-          const ref = e.target.getAttribute('href');
-          $('html, body').animate({
-            scrollTop: $(ref).offset().top
-        }, 400);
-        });
-      });
-    </script>
+    <script src="js/scripts.js"></script>
 
   </body>
 

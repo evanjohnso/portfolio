@@ -27,3 +27,8 @@ header.masthead>.overlay {
     padding: 10rem 0;
   }
 }
+
+.rounded-circle:hover {
+  opacity: .5;
+  cursor: pointer;  
+}
