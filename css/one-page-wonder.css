@@ -32,3 +32,14 @@ header.masthead>.overlay {
   opacity: .5;
   cursor: pointer;  
 }
+footer div:first-child {
+  width: fit-content;
+}
+footer div:first-child div {
+  position: relative;
+  float: right;
+}
+footer div:first-child div p {
+  text-align: center;
+  color: red;
+}

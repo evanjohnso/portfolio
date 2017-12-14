@@ -4,6 +4,9 @@
 
 ## Preview
 
+1. for images on hover, pop up a [See Project ->] looking dialog. Dark opacity looks nice
+2. Testimonails in quotes with links, titles, and pictures.
+
 [![One Page Wonder Preview](https://startbootstrap.com/assets/img/templates/one-page-wonder.jpg)](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)**
