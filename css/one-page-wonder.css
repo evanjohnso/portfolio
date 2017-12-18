@@ -1,6 +1,6 @@
-body {
+/* body {
   padding-top: 54px;
-}
+} */
 
 @media (min-width: 992px) {
   body {
@@ -53,19 +53,25 @@ footer div:first-child div p {
   align-items: center;
   justify-content: center;
 }
-.rounded_circle:hover {
-  opacity: .5;
-  cursor: pointer;
-}
 
 .img_wrap:hover .img_description_layer {
   visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.img_description {
+  font-size: 2em;
+}
+
+
+.img_wrap:hover img {
   opacity: 1;
 }
 
 
 .img_description {
-  transition: .2s;
+  transition: .4s;
   transform: translateY(1em);
 }
 
