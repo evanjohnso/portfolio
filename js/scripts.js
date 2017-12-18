@@ -1,9 +1,16 @@
 $(document).ready( () => {
   $('.nav-link').click( (e) => {
     const ref = e.target.getAttribute('href');
-    $('html, body').animate({
+    console.log(ref)
+    if (ref === '#home') {
+      $('html, body').animate({
+          scrollTop: $(ref).offset().top
+      }, 400);
+    } else {
+      $('html, body').animate({
         scrollTop: $(ref).offset().top
     }, 400);
+    }
   });
   $(document).click( event => {
     var clickover = $(event.target);
