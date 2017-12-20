@@ -145,21 +145,20 @@ header.masthead>.overlay {
 }
 
 .icons {
-  display: flex;
-  width: 40%;
+  width: 400px;
   margin: auto;
-}
-.icons * {
-  flex-grow: 1;
 }
 
 .icons img {
-  height: 50px;
-  width: 50px;
+  height: 46px;
+  width: 46px;
+  margin: 1em;
 }
 
 .icons img:hover {
-  opacity: .8;
+  opacity: .5;
+  color: red;
+  cursor: pointer;
 }
 
 footer {
