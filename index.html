@@ -4,20 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
   <title>Evan Johnson</title>
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+
   <script src="js/scripts.js"></script>
-  <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body id="home">
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#home">Home</a>
@@ -39,7 +36,7 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#social">Connect</a>
           </li>
         </ul>
       </div>
@@ -48,120 +45,131 @@
 
   <header class="masthead">
     <div class="overlay">
-      <div class="container">
-        <h1 class="display-1 text-white">Evan Johnson</h1>
-        <h2 class="display-6 text-white">Web & Mobile Developer</h2>
-      </div>
+      <h1 id="header-name"></h1>
+      <h3 id="header-developer"></h3>
     </div>
   </header>
-
-  <section>
-    <div class="container" id="about">
-      <div class="row align-items-center">
-        <div class="col-md-6 order-2">
-          <div class="p-5">
-            <img class="img-fluid rounded-circle" src="resources/headshot.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6 order-1">
-          <div class="p-5">
-            <h2 class="display-4">Code | Travel</h2>
-            <p>I'm a Portland based developer. I am passionate about building a secure and scalable code base. </p>
-          </div>
-        </div>
+  <div id="about">
+    <div class="about-content">
+      <div id="about-text">
+        <h1>A byte about me...</h1>
+        <hr>
+        <p>I am a web and mobile app developer based in Portland, Oregon. I develop primarily with JavaScript frameworks such
+          as Angular2 and React. I also have experience in Java, Android, React Native, Python, and C. I always enjoy experimenting
+          with new tools and languages to see how they compare. Plus, I love a good bash session configuring and installing
+          new dependencies in Linux. My professional goal is to join a team of developers passionate about building a secure,
+          scalable, and elegant code base.</p>
+        <p>Personally I aim toward a balanced life. I am a "nerdy extrovert" passionate about computer science and efficient
+          algorithms. On the other side of the life equation, I love skiing, camping, and traveling (most recently a nine
+          week motorcycle tour of Vietnam and a three week trek in the Nepalese Himalaya). I am an active member of the Portland
+          tech scene and volunteer in the community.
+        </p>
+        <p>Below are some of my work projects. Follow along my adventures on
+          <a href="https://www.instagram.com/house_ginger">Instagram</a>, and lets connect on
+          <a href="https://www.linkedin.com/in/evanrjohnso">LinkedIn!</a>
+        </p>
       </div>
+      <img src="resources/hanoi_friends.jpg" alt="Headshot">
     </div>
-  </section>
-
-  <section>
-    <div class="container" id="projects">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <a href="https://massahcollection.firebaseapp.com/">
-            <div class="p-5 img_wrap">
-              <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=1033" alt="">
-              <div class="img_description_layer">
-                <p class="img_description">Angular2 | Firebase</p>
+  </div>
+  <div id="projects">
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <a href="https://massahcollection.firebaseapp.com/">
+              <div class="circular--landscape">
+                <img class="img-fluid" src="resources/massah.jpg" alt="">
+                <div class="img_description_layer">
+                  <p class="img_description">Check it out!</p>
+                </div>
               </div>
+            </a>
+          </div>
+          <div class="col-md-6 order-1">
+            <div>
+              <h2 class="display-4">Massah Collection</h2>
+              <p>Shop elegant scarves and accessories sourced from around the world! Client project with an Angular front and
+                Google Firebase back.
+              </p>
             </div>
-          </a>
-        </div>
-        <div class="col-md-6 order-1">
-          <div class="p-5">
-            <h2 class="display-4">Massah Collection</h2>
-            <p>Elegant scarves sourced from around the world. Built for a client in Angular2.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <hr width="80%" color="black">
 
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 order-2">
-          <a href="https://github.com/evanjohnso/EpicodusAPI">
-            <div class="p-5 img_wrap">
-              <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=443" alt="">
-              <div class="img_description_layer">
-                <p class="img_description">Java | PostgreSQL</p>
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <a href="https://github.com/evanjohnso/EpicodusAPI">
+              <div class="circular--landscape">
+                <img class="img-fluid" src="https://unsplash.it/500/500?image=952" alt="">
+                <div class="img_description_layer">
+                  <p class="img_description">Java | PostgreSQL</p>
+                </div>
               </div>
+            </a>
+          </div>
+          <div class="col-md-6 order-1">
+            <div>
+              <h2 class="display-4">Epicodus REST API</h2>
+              <p>Custom API providing information about student demographics for a local Portland based code school. Built in
+                Java.
+              </p>
             </div>
-          </a>
-        </div>
-        <div class="col-md-6 order-1">
-          <div class="p-5">
-            <h2 class="display-4">Epicodus REST API</h2>
-            <p>Custom API providing information about student demographics for a local Portland based code school. Built in
-              Java.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <hr width="80%" color="black">
 
-  <section>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <a href="https://github.com/evanjohnso/QuickQuiz">
-            <div class="p-5 img_wrap">
-              <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=1032" alt="">
-              <div class="img_description_layer">
-                <p class="img_description">Android | Firebase</p>
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <a href="https://github.com/evanjohnso/QuickQuiz">
+
+              <div class="circular--landscape">
+                <img class="img-fluid" src="https://unsplash.it/500/500?image=816" alt="">
+                <div class="img_description_layer">
+                  <p class="img_description">Android | Firebase</p>
+                </div>
               </div>
+            </a>
+          </div>
+          <div class="col-md-6 order-1">
+            <div>
+              <h2 class="display-4">Aussie Oxford</h2>
+              <p>Studying for the SAT, LSAT, or GRE? Aussie Oxford is a gamefied learning platform to engage users throughout
+                the day. Built for Android.
+              </p>
             </div>
-          </a>
-        </div>
-        <div class="col-md-6 order-1">
-          <div class="p-5">
-            <h2 class="display-4">Aussie Oxford</h2>
-            <p>Studying for the SAT, LSAT, or GRE? Aussie Oxford is a gamefied learning platform to engage users throughout
-              the day. Built for Android.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <div class="frameworks">
-    <h1 class="text-center">Skills</h1>
+    </section>
   </div>
   <div id="social">
     <div class="social-content">
-      <h1>Connect on social media!</h1>
+      <h3>Catch Me on Social Media!</h3>
       <div class="icons">
-        <p>LinkedIn</p>
-        <p>Github</p>
-        <p>Instagram</p>
+        <a href="https://github.com/evanjohnso">
+          <img src='resources/github-icon.png'>
+        </a>
+        <a href="https://www.linkedin.com/in/evanrjohnso">
+          <img src='resources/linkedin-icon.png'>
+        </a>
+        <a href="https://www.instagram.com/house_ginger/">
+          <img src='resources/instagram-icon.png'>
+        </a>
       </div>
     </div>
   </div>
 
   <footer class="py-3 bg-dark" id="contact">
-    <p class="text-center text-white">Copyright &copy; Evan Johnson 2017</p>
+    <div class="text-center text-white">Copyright &copy; Evan Johnson 2017</div>
   </footer>
 </body>
 

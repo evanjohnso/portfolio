@@ -1,17 +1,12 @@
-html, body {
+html,
+body {
   height: 100%;
   margin-top: 0;
   padding: 0;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
 header.masthead {
-  background: url('../resources/computer.jpg') center center scroll;
+  background: url("../resources/computer3.jpg") center center scroll;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,11 +15,16 @@ header.masthead {
   width: 100%;
   height: 100%;
   max-height: 100%;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   display: table;
+  font-family: "Playfair Display", serif;
 }
 
-header.masthead>.overlay {
+.overlay * {
+  color: white;
+}
+
+header.masthead > .overlay {
   padding: 5rem 0;
   text-align: center;
   display: table-cell;
@@ -32,10 +32,62 @@ header.masthead>.overlay {
   text-align: center;
 }
 
-@media (min-width: 992px) {
-  header.masthead>.overlay {
-    padding: 10rem 0;
+@media (min-width: 750px) {
+  /* when resizing screen, weird bug makes text overlap */
+  .order-1 div {
+    padding-left: 5em;
   }
+}
+
+/* ABOUT SECTION */
+
+.about-content {
+  display: flex;
+  height: fit-content;
+  padding: 6% 2% 2% 2%;
+  background: darkslategrey;
+  color: lightblue;
+  text-align: justify;
+  font-family: "Playfair Display", serif;
+}
+#about-text p {
+  margin: 0.6em 0.5em;
+}
+.about-text,
+a {
+  text-decoration: underline;
+  color: lightblue;
+}
+.about-text,
+a:hover {
+  color: lightblue;
+}
+
+.about-text,
+hr {
+  background-color: lightblue;
+}
+.about-content img {
+  margin-left: 1em;
+  float: right;
+  max-height: 350px;
+  max-width: 400px;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  padding: 0;
+  background: lightgrey;
+}
+
+.img_description {
+  transition: 0.4s;
+  transform: translateY(1em);
+}
+
+.circular--landscape:hover .img_description {
+  transform: translateY(0);
 }
 
 .img_description_layer {
@@ -52,70 +104,102 @@ header.masthead>.overlay {
   justify-content: center;
 }
 
-.img_wrap:hover .img_description_layer {
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+}
+
+.circular--landscape:hover .img_description_layer {
   visibility: visible;
   opacity: 1;
-  cursor: pointer;
 }
 
 .img_description {
   font-size: 2em;
 }
 
-
-.img_wrap:hover img {
-  opacity: 1;
+.p-5 {
+  padding: 0;
 }
 
+section {
+  padding: 2em;
+}
+/* MOBILE STYLING */
 
-.img_description {
-  transition: .4s;
-  transform: translateY(1em);
+@media only screen and (max-width: 786px) {
+  .about-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: fit-content;
+    padding-top: 3em;
+    width: 100%;
+  }
+  .about-content img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .circular--landscape {
+    height: 250px;
+    width: 250px;
+  }
+  .col-md-6 {
+    text-align: center;
+  }
 }
 
-.img_wrap:hover .img_description {
-  transform: translateY(0);
-}
+/* END MOBILE STYLING */
 
-.frameworks {
-  width: 100%;
-  background: lightgrey;
-  color: white;
-}
-
-
+/* SOCIAL MEDIA ICONS */
 #social {
   width: 100%;
   height: 30%;
-  background: darkcyan;
+  background: darkslategrey;
   text-align: center;
-  color: white;
   display: table;
+}
+
+.social-content h3 {
+  font-size: 2em;
 }
 
 .social-content {
   display: table-cell;
   vertical-align: middle;
+  color: lightblue;
   text-align: center;
 }
 
-.icons {
-  display: flex;
-  width: 40%;
-  margin: auto;
-}
-.icons * {
-  flex-grow: 1;
+.icons img {
+  height: 46px;
+  width: 46px;
+  margin: 1em;
 }
 
+.icons a {
+  text-decoration: none;
+}
+
+.icons img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* FOOTER  */
 footer {
-  display: table;
-  width: 100%;
-  padding: 0;
-}
-
-footer p {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
 }
