@@ -22,6 +22,7 @@ header.masthead {
   max-height: 100%;
   background-size:100% 100%;
   display: table;
+  font-family: 'Playfair Display', serif;
 }
 
 header.masthead>.overlay {
@@ -44,6 +45,7 @@ header.masthead>.overlay {
   height: 30%;
   display: inline-block;
   height: fit-content;
+  font-family: 'Raleway', sans-serif;  
 }
 
 .about-content {
@@ -157,7 +159,6 @@ header.masthead>.overlay {
 
 .icons img:hover {
   opacity: .5;
-  color: red;
   cursor: pointer;
 }
 
