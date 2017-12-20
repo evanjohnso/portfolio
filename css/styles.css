@@ -49,9 +49,12 @@ header.masthead>.overlay {
 .about-content {
   height: fit-content;
   padding: 6% 2% 2% 2%;
+  background: darkslategrey;
+  color: lightblue;
 }
 
 #about img {
+  margin-left: 1em;
   float: right;
   width: 40%;
   max-height: 400px;
@@ -94,11 +97,9 @@ header.masthead>.overlay {
     font-size: 2em;
   }
 
-  .about-content {
-    background: darkslategrey;
+  .about-content {  
     height: fit-content;
     padding-top: 4em;
-    color: lightblue;
   }
 
   .social-content h1 {
@@ -150,6 +151,15 @@ header.masthead>.overlay {
 }
 .icons * {
   flex-grow: 1;
+}
+
+.icons img {
+  height: 50px;
+  width: 50px;
+}
+
+.icons img:hover {
+  opacity: .8;
 }
 
 footer {
