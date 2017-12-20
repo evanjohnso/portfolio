@@ -83,6 +83,25 @@ header.masthead>.overlay {
   font-size: 2em;
 }
 
+@media (max-width: 500px) {
+  .img_description {
+    font-size: 2em;
+  }
+
+  .about-content {
+    background: lightslategrey;
+    height: fit-content;
+    padding-top: 4em;
+  }
+
+  /* #about img {
+    float: right;
+    width: 40%;
+    max-height:40%;
+    max-width: 400px;
+  } */
+}
+
 
 .img_wrap:hover img {
   opacity: 1;
