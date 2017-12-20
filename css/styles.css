@@ -21,29 +21,21 @@ header.masthead {
   height: 100%;
   max-height: 100%;
   background-size:100% 100%;
+  display: table;
 }
 
 header.masthead>.overlay {
   padding: 5rem 0;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
   header.masthead>.overlay {
     padding: 10rem 0;
   }
-}
-
-footer div:first-child {
-  width: fit-content;
-}
-footer div:first-child div {
-  position: relative;
-  float: right;
-}
-footer div:first-child div p {
-  text-align: center;
 }
 
 .img_description_layer {
@@ -83,4 +75,47 @@ footer div:first-child div p {
 
 .img_wrap:hover .img_description {
   transform: translateY(0);
+}
+
+.frameworks {
+  width: 100%;
+  background: lightgrey;
+  color: white;
+}
+
+
+#social {
+  width: 100%;
+  height: 30%;
+  background: darkcyan;
+  text-align: center;
+  color: white;
+  display: table;
+}
+
+.social-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  width: 40%;
+  margin: auto;
+}
+.icons * {
+  flex-grow: 1;
+}
+
+footer {
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+
+footer p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
