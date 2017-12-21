@@ -12,7 +12,7 @@ html, body {
 }
 
 header.masthead {
-  background: url('../resources/computer.jpg') center center scroll;
+  background: url('../resources/computer3.jpg') center center scroll;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -34,9 +34,12 @@ header.masthead>.overlay {
   text-align: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 700px) {
   header.masthead>.overlay {
     padding: 10rem 0;
+  }
+  .about-content img {  
+    height: 350px;
   }
 }
 
@@ -78,17 +81,22 @@ header.masthead>.overlay {
   justify-content: center;
 }
 
-.rounded-circles {
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    display: block;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.img_wrap:hover .img_description_layer {
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+}
+
+
+.circular--landscape:hover .img_description_layer {
   visibility: visible;
   opacity: 1;
   cursor: pointer;
