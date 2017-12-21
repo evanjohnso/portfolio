@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin-top: 0;
   padding: 0;
+  /* font-family: 'Raleway', sans-serif;   */
 }
 
 @media (min-width: 992px) {
@@ -45,7 +46,7 @@ header.masthead>.overlay {
   height: 30%;
   display: inline-block;
   height: fit-content;
-  font-family: 'Raleway', sans-serif;  
+  
 }
 
 .about-content {
@@ -75,6 +76,16 @@ header.masthead>.overlay {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.rounded-circles {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
 }
 
 .img_wrap:hover .img_description_layer {
