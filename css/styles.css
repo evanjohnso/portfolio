@@ -65,16 +65,13 @@ header.masthead>.overlay {
   background: lightgrey;
 }
 
-.img_wrap:hover img {
-  opacity: 1;
-}
 
 .img_description {
   transition: .4s;
   transform: translateY(1em);
 }
 
-.img_wrap:hover .img_description {
+.circular--landscape:hover .img_description {
   transform: translateY(0);
 }
 
