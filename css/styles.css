@@ -48,9 +48,14 @@ header.masthead>.overlay {
   padding: 6% 2% 2% 2%;
   background: darkslategrey;
   color: lightblue;
+  text-align: justify;
 }
-.about-content * {
-  /* flex-grow: 1; */
+.about-text, a {
+  text-decoration: underline;
+  color: lightblue;
+}
+.about-text, a:hover {
+  color: lightblue;
 }
 
 .about-content img {
