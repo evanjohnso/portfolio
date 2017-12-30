@@ -44,7 +44,6 @@ header.masthead>.overlay {
 
 .about-content {
   display: flex;
-  /* flex-wrap: wrap-reverse; */
   height: fit-content;
   padding: 6% 2% 2% 2%;
   background: darkslategrey;
@@ -117,14 +116,14 @@ header.masthead>.overlay {
   font-size: 2em;
 }
 
+section {
+  padding: 2em;
+}
 /* MOBILE STYLING */
 @media only screen and (max-width: 786px) {
   body p {
     line-height: 1.5;
     font-size: 18px;
-  }
-  section {
-    padding-top: 2em;
   }
   .img_description {
     font-size: 2em;
@@ -135,12 +134,20 @@ header.masthead>.overlay {
     height: fit-content;
     padding-top: 4em;
   }
+  .about-content img {
+    margin: 0;
+    width: 300px;
+    height: 320px;
+  }
   .social-content h1 {
-    font-size: 2em;
+    font-size: 26px;
   }
   .circular--landscape {
     height: 300px;
     width: 300px;
+  }
+  .col-md-6 {
+    text-align: center;
   }
 }
 
