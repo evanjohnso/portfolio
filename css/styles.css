@@ -50,7 +50,7 @@ header.masthead>.overlay {
   color: lightblue;
 }
 .about-content * {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .about-content img {
@@ -122,7 +122,7 @@ section {
 /* MOBILE STYLING */
 @media only screen and (max-width: 786px) {
   body p {
-    line-height: 1.5;
+    /* line-height: 1.5; */
     font-size: 18px;
   }
   .img_description {
@@ -133,6 +133,7 @@ section {
     flex-wrap: wrap-reverse;
     height: fit-content;
     padding-top: 4em;
+    width: 100%;
   }
   .about-content img {
     margin: 0;
@@ -143,8 +144,8 @@ section {
     font-size: 26px;
   }
   .circular--landscape {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
   .col-md-6 {
     text-align: center;
