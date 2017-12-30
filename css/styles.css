@@ -42,15 +42,19 @@ header.masthead>.overlay {
 
 /* ABOUT SECTION */
 
-#about {
+.about-content {
   display: flex;
+  /* flex-wrap: wrap-reverse; */
   height: fit-content;
   padding: 6% 2% 2% 2%;
   background: darkslategrey;
   color: lightblue;
 }
+.about-content * {
+  flex-grow: 1;
+}
 
-#about img {
+.about-content img {
   margin-left: 1em;
   float: right;
   max-height: 400px;
@@ -114,19 +118,20 @@ header.masthead>.overlay {
 }
 
 /* MOBILE STYLING */
-
-@media (max-width: 500px) {
+@media only screen and (max-width: 786px) {
   body p {
     line-height: 1.5;
     font-size: 18px;
   }
   section {
-    margin-top: 2em;
+    padding-top: 2em;
   }
   .img_description {
     font-size: 2em;
   }
   .about-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
     height: fit-content;
     padding-top: 4em;
   }
