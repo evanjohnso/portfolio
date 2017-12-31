@@ -13,4 +13,28 @@ $(document).ready( () => {
       $navbar.collapse('hide');
     };
   });
+
+  const txt = "Evan Johnson";
+  const dev = "Web & Mobile Developer";
+  const speed = 200;
+
+  let i = 0;
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("header-name").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+      return;
+    }
+    typeWriter2();
+  }
+  let j = 0;
+  function typeWriter2() {
+    if (j < dev.length) {
+      document.getElementById("header-developer").innerHTML += dev.charAt(j);
+      j++;
+      setTimeout(typeWriter2, speed);
+    }
+  }
+  typeWriter()
 });
