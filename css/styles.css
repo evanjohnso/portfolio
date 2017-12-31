@@ -5,6 +5,10 @@ html, body {
   /* font-family: 'Raleway', sans-serif;   */
 }
 
+body p {
+  font-size: 20px;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
@@ -49,6 +53,7 @@ header.masthead>.overlay {
   background: darkslategrey;
   color: lightblue;
   text-align: justify;
+  font-family: 'Playfair Display', serif;
 }
 .about-text, a {
   text-decoration: underline;
@@ -58,12 +63,16 @@ header.masthead>.overlay {
   color: lightblue;
 }
 
+.about-text, hr {
+  background-color: lightblue;
+}
 .about-content img {
   margin-left: 1em;
   float: right;
   max-height: 400px;
   max-width: 400px;
 }
+
 
 /* PROJECTS SECTION */
 
