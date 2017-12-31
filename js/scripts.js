@@ -33,5 +33,7 @@ $(document).ready( () => {
     if (txt === header2) finished = true;
     typeWriter(title, header2, 0)
   }
-  typeWriter(name, header1, 0)
+  setTimeout(function() {
+    typeWriter(name, header1, 0)
+  }, 800);
 });
