@@ -14,27 +14,24 @@ $(document).ready( () => {
     };
   });
 
-  const txt = "Evan Johnson";
+  const name = "Evan Johnson";
   const dev = "Web & Mobile Developer";
   const speed = 200;
 
-  let i = 0;
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("header-name").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+  let header = document.getElementById("header-name");
+  let title = document.getElementById("header-developer");
+
+  let kill = false;
+  function typeWriter(html, txt, charCounter) {
+    if (kill) return;
+    if (charCounter < txt.length) {
+      html.innerHTML += txt.charAt(charCounter);
+      charCounter++;
+      setTimeout(typeWriter.bind(this, html, txt, charCounter), speed);
       return;
     }
-    typeWriter2();
+    if (txt === dev) kill = true;
+    typeWriter(title, dev, 0)
   }
-  let j = 0;
-  function typeWriter2() {
-    if (j < dev.length) {
-      document.getElementById("header-developer").innerHTML += dev.charAt(j);
-      j++;
-      setTimeout(typeWriter2, speed);
-    }
-  }
-  typeWriter()
+  typeWriter(header, name, 0)
 });
