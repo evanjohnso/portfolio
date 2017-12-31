@@ -14,24 +14,24 @@ $(document).ready( () => {
     };
   });
 
-  const name = "Evan Johnson";
-  const dev = "Web & Mobile Developer";
+  const header1 = "Evan Johnson";
+  const header2 = "Web & Mobile Developer";
   const speed = 200;
 
-  let header = document.getElementById("header-name");
+  let name = document.getElementById("header-name");
   let title = document.getElementById("header-developer");
 
-  let kill = false;
+  let finished = false;
   function typeWriter(html, txt, charCounter) {
-    if (kill) return;
+    if (finished) return;
     if (charCounter < txt.length) {
       html.innerHTML += txt.charAt(charCounter);
       charCounter++;
       setTimeout(typeWriter.bind(this, html, txt, charCounter), speed);
       return;
     }
-    if (txt === dev) kill = true;
-    typeWriter(title, dev, 0)
+    if (txt === header2) finished = true;
+    typeWriter(title, header2, 0)
   }
-  typeWriter(header, name, 0)
+  typeWriter(name, header1, 0)
 });
