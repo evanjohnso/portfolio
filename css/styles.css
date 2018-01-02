@@ -4,13 +4,6 @@ html, body {
   padding: 0;
 }
 
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
 header.masthead {
   background: url('../resources/computer3.jpg') center center scroll;
   background-repeat: no-repeat;
@@ -38,9 +31,10 @@ header.masthead>.overlay {
   text-align: center;
 }
 
-@media (min-width: 700px) {
-  header.masthead>.overlay {
-    padding: 10rem 0;
+@media (min-width: 750px) {
+  /* when resizing screen, weird bug makes text overlap */
+  .order-1 div {
+    padding-left: 5em;
   }
 }
 
