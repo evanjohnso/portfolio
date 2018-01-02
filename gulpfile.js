@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var pkg = require('./package.json');
+var uglify = require('gulp-uglify');
 
 // Copy vendor files from /node_modules into /vendor
 // NOTE: requires `npm install` before running!
@@ -30,9 +31,15 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync'], function() {
+gulp.task('dev', ['browserSync', 'minifyScripts'], function() {
   // Reloads the browser whenever HTML or CSS files change
   gulp.watch('js/*.js', browserSync.reload);
   gulp.watch('css/*.css', browserSync.reload);
   gulp.watch('*.html', browserSync.reload);
+});
+
+gulp.task("minifyScripts", function(){
+  return gulp.src("./build/js/scripts.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("./build/js"));
 });
