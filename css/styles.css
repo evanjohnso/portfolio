@@ -84,7 +84,6 @@ header.masthead>.overlay {
   background: lightgrey;
 }
 
-
 .img_description {
   transition: .4s;
   transform: translateY(1em);
@@ -115,6 +114,7 @@ header.masthead>.overlay {
   height: 400px;
   overflow: hidden;
   border-radius: 50%;
+  margin: auto;
 }
 
 .circular--landscape img {
@@ -125,11 +125,14 @@ header.masthead>.overlay {
 .circular--landscape:hover .img_description_layer {
   visibility: visible;
   opacity: 1;
-  cursor: pointer;
 }
 
 .img_description {
   font-size: 2em;
+}
+
+.p-5 {
+  padding: 0;
 }
 
 section {
@@ -137,9 +140,6 @@ section {
 }
 /* MOBILE STYLING */
 @media only screen and (max-width: 786px) {
-  .img_description {
-    font-size: 2em;
-  }
   .about-content {
     display: flex;
     flex-wrap: wrap-reverse;
