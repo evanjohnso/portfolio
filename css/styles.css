@@ -169,7 +169,6 @@ section {
   height: 30%;
   background: darkslategrey;
   text-align: center;
-  color: white;
   display: table;
 }
 
@@ -188,6 +187,10 @@ section {
   height: 46px;
   width: 46px;
   margin: 1em;
+}
+
+.icons a {
+  text-decoration: none;
 }
 
 .icons img:hover {
