@@ -41,5 +41,5 @@ gulp.task('dev', ['browserSync', 'minifyScripts'], function() {
 gulp.task("minifyScripts", function(){
   return gulp.src("./build/js/scripts.js")
     .pipe(uglify())
-    .pipe(gulp.dest("./build/js"));
+    .pipe(gulp.dest("./build/js/"));
 });
