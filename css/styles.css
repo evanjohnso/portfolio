@@ -49,7 +49,7 @@ header.masthead>.overlay {
   text-align: justify;
   font-family: 'Playfair Display', serif;
 }
-#about-text * {
+#about-text p {
   margin: .6em .5em;
 }
 .about-text, a {
