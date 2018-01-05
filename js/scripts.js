@@ -1,5 +1,9 @@
 $(document).ready( () => {
 
+  $('header').imagesLoaded( {background: true}, function() {
+    typeWriter(name, header1, 0);
+  });
+
   $('.nav-link').click( (e) => {
     const ref = e.target.getAttribute('href');
       $('html, body').animate({
@@ -17,7 +21,7 @@ $(document).ready( () => {
 
   const header1 = "Evan Johnson";
   const header2 = "Web & Mobile Developer";
-  const speed = 200;
+  const speed = 150;
 
   let name = document.getElementById("header-name");
   let title = document.getElementById("header-developer");
@@ -32,9 +36,7 @@ $(document).ready( () => {
       return;
     }
     if (txt === header2) finished = true;
+    // setTimeout(typeWriter(title, header2, 0), 3000);
     typeWriter(title, header2, 0)
   }
-  setTimeout(function() {
-    typeWriter(name, header1, 0)
-  }, 800);
 });
