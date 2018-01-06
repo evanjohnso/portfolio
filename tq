@@ -1,0 +1,73 @@
+[33mee8c78e[m create closure around typeWriter function to encapsulate private variables
+[33me7b38ff[m Merge branch 'master' into gh-pages merge with old commit
+[33ma8c4f39[m revert to old commit to grab old styling, weird
+[33mb67092d[m image loaded function
+[33me2b9a4c[m update copy and styling about
+[33m612eee6[m update about me copy
+[33m5a22dda[m resizing bug resolved
+[33mc4e4f72[m fixx weird link styling issue in footer
+[33meb85d57[m add minify scripts to build pipeline
+[33m1e00562[m micro styling changes
+[33me52b521[m mobile styling updates
+[33m991d0d6[m add timeout to delay type writer functionality
+[33m2f7eacc[m further refactor for readability
+[33m390b20e[m refactor typeWriter
+[33m31bd146[m add typewriter effect
+[33m4b50c6e[m quick updates
+[33mf352c9a[m update about me content
+[33m1ad34ca[m mobile styling
+[33ma92c394[m mobile styling
+[33m3fff015[m mobile styling
+[33m0117ab3[m cleanup styling and fix image and text overlap bug
+[33mc011a27[m add about me content
+[33m93d3efb[m css refactoring
+[33m54940c9[m css refactor
+[33mbd15068[m fix about image overflowing parent div
+[33m2bcd2fd[m quick fix
+[33m7834b43[m add styling for large screens
+[33md9133ab[m add custom pictures
+[33m39f6c4f[m add custom to header
+[33mf3c2d05[m style icons and add links
+[33mcd13ae0[m add icon images
+[33m0debb66[m mobile styling
+[33m773a904[m restyle about for mobile viewing
+[33m1c0c703[m style about me
+[33m9f62267[m refactor landing page and footer
+[33m96177a3[m Merge branch 'master' into gh-pages merge upstream CNAME after hosting site
+[33m14b2e1b[m fix
+[33m7c3c2c4[m fix styles
+[33m7685ef6[m Update CNAME
+[33m6da0478[m Create CNAME
+[33m43b31aa[m navbar closes when clicking document
+[33mf4724a7[m add links to projects
+[33m56fe516[m image styling
+[33md2894a0[m add some custom pictures
+[33m89f3bef[m add js file
+[33m60805da[m initial setup
+[33m8370548[m remove popper from gulpfile
+[33m597a4f5[m update to Bootstrap 4.0.0-beta.2
+[33m6e6f40d[m https link and prettify CSS
+[33md396f6f[m update package.json and run gulp
+[33m6d31810[m travis config and update README
+[33mabc7c28[m HTTPS for package.json homepage link
+[33m779903d[m Wrapped nav items in a container element
+[33m4f84b60[m update version
+[33m98b2704[m Merge pull request #10 from BlackrockDigital/v4-dev
+[33m0a44734[m Bootstrap 4 Beta Update
+[33mc624f74[m dev environment
+[33mac0b147[m format package.json
+[33mec94d15[m responsiveness updates
+[33m5edfb96[m initial commit for v4-dev
+[33mc885039[m update to bootstrap 3.3.7
+[33m45f2391[m update CSS to MIT
+[33md1612dd[m update to MIT license
+[33md7dfe25[m Bootstrap v3.3.6 Update
+[33m0fefe13[m Bootstrap v3.3.5 Update
+[33m6090517[m Bootstrap 3.3.4 Update
+[33m0e7d76e[m Bootstrap 3.3.2 Update
+[33m3a615fe[m 2015 License/Readme Update
+[33m424ebda[m Bootstrap 3.3.1 Update
+[33m047b78e[m Readme update
+[33m82d26b9[m Bootstrap 3.3.0 Update
+[33m9fcd5d9[m initial commit of base template
+[33mbb41aff[m Initial commit

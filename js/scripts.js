@@ -8,14 +8,19 @@ $(document).ready( () => {
       scrollTop: $(ref).offset().top
     }, 400);
   });
-  $(document).click( e => {
+  function scrollTo(e) {
+    
+  }
+  $(document).click(collapsingNavBar);
+  function collapsingNavBar(e) {
+    console.log(e)
     let clickover = $(e.target);
     let $navbar = $("#navbarResponsive");
     let _opened = $navbar.hasClass('collapse');
     if (_opened && !clickover.hasClass("nav-item")) {
       $navbar.collapse('hide');
     };
-  });
+  }
   function typeHeaders() {
 
     const header1 = "Evan Johnson";
