@@ -134,6 +134,7 @@ section {
 }
 /* MOBILE STYLING */
 
+@media only screen and (max-width: 786px) {
   .about-content {
     display: flex;
     flex-wrap: wrap-reverse;
