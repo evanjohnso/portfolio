@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
   height: 100%;
   margin-top: 0;
   padding: 0;
 }
 
 header.masthead {
-  background: url('../resources/computer3.jpg') center center scroll;
+  background: url("../resources/computer3.jpg") center center scroll;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,14 +17,14 @@ header.masthead {
   max-height: 100%;
   background-size: 100% 100%;
   display: table;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .overlay * {
   color: white;
-} 
+}
 
-header.masthead>.overlay {
+header.masthead > .overlay {
   padding: 5rem 0;
   text-align: center;
   display: table-cell;
@@ -47,29 +48,31 @@ header.masthead>.overlay {
   background: darkslategrey;
   color: lightblue;
   text-align: justify;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 #about-text p {
-  margin: .6em .5em;
+  margin: 0.6em 0.5em;
 }
-.about-text, a {
+.about-text,
+a {
   text-decoration: underline;
   color: lightblue;
 }
-.about-text, a:hover {
+.about-text,
+a:hover {
   color: lightblue;
 }
 
-.about-text, hr {
+.about-text,
+hr {
   background-color: lightblue;
 }
 .about-content img {
   margin-left: 1em;
   float: right;
-  max-height: 400px;
+  max-height: 350px;
   max-width: 400px;
 }
-
 
 /* PROJECTS SECTION */
 
@@ -79,7 +82,7 @@ header.masthead>.overlay {
 }
 
 .img_description {
-  transition: .4s;
+  transition: 0.4s;
   transform: translateY(1em);
 }
 
@@ -189,7 +192,7 @@ section {
 }
 
 .icons img:hover {
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
 }
 
