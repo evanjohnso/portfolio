@@ -64,6 +64,13 @@ header.masthead > .overlay {
 #about-text hr {
   background-color: lightblue;
 }
+
+#projects hr {
+  border: none;
+  height: 3px;
+  background-color: darkslategray;
+}
+
 #main_picture {
   margin-left: 1em;
   float: right;
