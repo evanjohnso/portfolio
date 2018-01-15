@@ -64,7 +64,7 @@ header.masthead > .overlay {
 #about-text hr {
   background-color: lightblue;
 }
-.about-content img {
+#main_picture {
   margin-left: 1em;
   float: right;
   max-height: 300px;
@@ -151,12 +151,13 @@ section {
   #about-text h1 {
     text-align: center;
   }
-  .about-content img {
+  #main_picture {
     margin: auto;
     width: 300px;
     height: 250px;
     padding-bottom: 1em;
   }
+
   .circular--landscape {
     height: 250px;
     width: 250px;
