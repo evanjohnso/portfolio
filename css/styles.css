@@ -31,14 +31,6 @@ header.masthead > .overlay {
   vertical-align: middle;
   text-align: center;
 }
-
-@media (min-width: 750px) {
-  /* when resizing screen, weird bug makes text overlap */
-  .order-1 div {
-    padding-left: 5em;
-  }
-}
-
 /* ABOUT SECTION */
 
 .about-content {
@@ -53,41 +45,68 @@ header.masthead > .overlay {
 #about-text p {
   margin: 0.6em 0.5em;
 }
-.about-text,
-a {
+#about-text a {
   text-decoration: underline;
   color: lightblue;
 }
-.about-text,
-a:hover {
+#about-text a:hover {
   color: lightblue;
 }
 
-.about-text,
-hr {
+#about-text hr {
   background-color: lightblue;
 }
-.about-content img {
+
+#main_picture {
   margin-left: 1em;
   float: right;
-  max-height: 350px;
+  max-height: 300px;
   max-width: 400px;
 }
 
 /* PROJECTS SECTION */
+.row {
+  margin: 2em;
+}
+.col-md-6 {
+  text-align: center;
+}
+.col-md-6 p {
+  padding: 1em;
+  width: 50%;
+  margin: auto;
+}
+#projects hr {
+  border: none;
+  height: 3px;
+  background-color: darkslategray;
+}
+.project_image {
+  height: 300px;
+  width: 350px;
+}
+.projects_img_section:hover .img_description {
+  transform: translateY(0);
+}
+.projects_img_section:hover .img_description_layer {
+  visibility: visible;
+  opacity: 1;
+}
 
 #projects {
-  padding: 0;
+  padding-top: 1em;
   background: lightgrey;
+}
+
+#projects_banner {
+  padding-top: 0.5em;
+  text-align: center;
+  font-size: 4em;
 }
 
 .img_description {
   transition: 0.4s;
   transform: translateY(1em);
-}
-
-.circular--landscape:hover .img_description {
-  transform: translateY(0);
 }
 
 .img_description_layer {
@@ -103,33 +122,8 @@ hr {
   align-items: center;
   justify-content: center;
 }
-
-.circular--landscape {
-  display: inline-block;
-  position: relative;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: auto;
-}
-
-.circular--landscape img {
-  width: auto;
-  height: 100%;
-}
-
-.circular--landscape:hover .img_description_layer {
-  visibility: visible;
-  opacity: 1;
-}
-
 .img_description {
   font-size: 2em;
-}
-
-.p-5 {
-  padding: 0;
 }
 
 section {
@@ -145,17 +139,24 @@ section {
     padding-top: 3em;
     width: 100%;
   }
-  .about-content img {
+  #about-text h1 {
+    text-align: center;
+  }
+  #main_picture {
     margin: auto;
     width: 300px;
-    height: 300px;
-  }
-  .circular--landscape {
     height: 250px;
+    padding-bottom: 1em;
+  }
+  .row {
+    margin: 0;
+  }
+  .project_image {
+    height: 200px;
     width: 250px;
   }
-  .col-md-6 {
-    text-align: center;
+  .col-md-6 p {
+    width: 100%;
   }
 }
 
