@@ -80,12 +80,24 @@ header.masthead > .overlay {
 
 /* PROJECTS SECTION */
 
+.project_image {
+  height: 350px;
+  width: 350px;
+}
+.projects_img_section:hover .img_description {
+  transform: translateY(0);
+}
+.projects_img_section:hover .img_description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
 #projects {
   padding-top: 1em;
   background: lightgrey;
 }
 
-#projects_banner h1 {
+#projects_banner {
   padding-top: 0.5em;
   text-align: center;
   font-size: 4em;
@@ -99,7 +111,10 @@ header.masthead > .overlay {
 .circular--landscape:hover .img_description {
   transform: translateY(0);
 }
-
+.circular--landscape:hover .img_description_layer {
+  visibility: visible;
+  opacity: 1;
+}
 .img_description_layer {
   position: absolute;
   top: 0;
@@ -127,11 +142,6 @@ header.masthead > .overlay {
 .circular--landscape img {
   width: auto;
   height: 100%;
-}
-
-.circular--landscape:hover .img_description_layer {
-  visibility: visible;
-  opacity: 1;
 }
 
 .img_description {
@@ -167,6 +177,10 @@ section {
 
   .circular--landscape {
     height: 250px;
+    width: 250px;
+  }
+  .project_image {
+    height: 200px;
     width: 250px;
   }
   .col-md-6 {
