@@ -79,7 +79,17 @@ header.masthead > .overlay {
 }
 
 /* PROJECTS SECTION */
-
+.row {
+  margin: 2em;
+}
+.col-md-6 {
+  text-align: center;
+}
+.col-md-6 p {
+  padding: 1em;
+  width: 50%;
+  margin: auto;
+}
 .project_image {
   height: 350px;
   width: 350px;
@@ -174,7 +184,9 @@ section {
     height: 250px;
     padding-bottom: 1em;
   }
-
+  .row {
+    margin: 0;
+  }
   .circular--landscape {
     height: 250px;
     width: 250px;
@@ -183,8 +195,8 @@ section {
     height: 200px;
     width: 250px;
   }
-  .col-md-6 {
-    text-align: center;
+  .col-md-6 p {
+    width: 100%;
   }
 }
 
