@@ -6,7 +6,7 @@ body {
 }
 
 header.masthead {
-  background: url("../resources/computer3.jpg") center center scroll;
+  background: url("../resources/computer.jpg") center center scroll;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
