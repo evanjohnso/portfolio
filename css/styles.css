@@ -39,12 +39,11 @@ header.masthead>.overlay {
   padding: 6% 2% 2% 2%;
   background: darkslategrey;
   color: lightblue;
-  font-size: 1.3em;
   font-family: "Playfair Display", serif;
 }
 
 .about-content h1 {
-  font-size: 4em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -152,7 +151,7 @@ section {
 }
 
 .social-content h3 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .social-content {
@@ -198,9 +197,6 @@ footer {
   #about-text {
     display: flex;
     flex-direction: column;
-  }
-  #about-text p {
-    font-size: .8em;
     text-align: center;
   }
   #about-text img {
@@ -220,7 +216,7 @@ footer {
     width: 100%;
   }
   .social-content h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 }
 
