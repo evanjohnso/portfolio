@@ -24,13 +24,15 @@ header.masthead {
   color: white;
 }
 
-header.masthead > .overlay {
+header.masthead>.overlay {
   padding: 5rem 0;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
+
+
 /* ABOUT SECTION */
 
 .about-content {
@@ -53,35 +55,44 @@ header.masthead > .overlay {
 .about-content hr {
   background-color: lightblue;
 }
+
 #about-text img {
   float: left;
   margin-right: 1em;
 }
 
+
 /* PROJECTS SECTION */
+
 .row {
   margin: 2em;
 }
+
 .col-md-6 {
   text-align: center;
 }
+
 .col-md-6 p {
   padding: 1em;
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
+
 #projects hr {
   border: none;
   height: 3px;
   background-color: darkslategray;
 }
+
 .project_image {
   height: 300px;
   width: 350px;
 }
+
 .projects_img_section:hover .img_description {
   transform: translateY(0);
 }
+
 .projects_img_section:hover .img_description_layer {
   visibility: visible;
   opacity: 1;
@@ -119,8 +130,10 @@ header.masthead > .overlay {
 }
 
 section {
-  padding: 2em;
+  padding: 1em;
 }
+
+
 /* MOBILE STYLING */
 
 @media only screen and (max-width: 786px) {
@@ -128,7 +141,6 @@ section {
     font-size: 3em;
     padding-top: 0.5em;
   }
-
   #about-text {
     display: flex;
     flex-direction: column;
@@ -154,12 +166,15 @@ section {
   }
 }
 
+
 /* END MOBILE STYLING */
 
+
 /* SOCIAL MEDIA ICONS */
+
 #social {
   width: 100%;
-  height: 30%;
+  height: 25%;
   background: darkslategrey;
   text-align: center;
   display: table;
@@ -191,7 +206,9 @@ section {
   cursor: pointer;
 }
 
+
 /* FOOTER  */
+
 footer {
   display: flex;
   align-items: center;
