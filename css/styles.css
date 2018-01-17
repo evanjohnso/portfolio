@@ -184,7 +184,7 @@ footer {
 }
 /* MOBILE STYLING */
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .about-content h1 {
     font-size: 2em;
     padding-top: 0.5em;
