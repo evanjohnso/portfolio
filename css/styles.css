@@ -34,34 +34,28 @@ header.masthead > .overlay {
 /* ABOUT SECTION */
 
 .about-content {
-  display: flex;
-  height: fit-content;
   padding: 6% 2% 2% 2%;
   background: darkslategrey;
   color: lightblue;
-  text-align: justify;
   font-family: "Playfair Display", serif;
 }
-#about-text p {
-  margin: 0.6em 0.5em;
+
+.about-content h1 {
+  font-size: 4em;
+  text-align: center;
 }
+
 #about-text a {
   text-decoration: underline;
   color: lightblue;
 }
-#about-text a:hover {
-  color: lightblue;
-}
 
-#about-text hr {
+.about-content hr {
   background-color: lightblue;
 }
-
-#main_picture {
-  margin-left: 1em;
-  float: right;
-  max-height: 300px;
-  max-width: 400px;
+#about-text img {
+  float: left;
+  margin-right: 1em;
 }
 
 /* PROJECTS SECTION */
@@ -107,6 +101,7 @@ header.masthead > .overlay {
 .img_description {
   transition: 0.4s;
   transform: translateY(1em);
+  font-size: 2em;
 }
 
 .img_description_layer {
@@ -122,9 +117,6 @@ header.masthead > .overlay {
   align-items: center;
   justify-content: center;
 }
-.img_description {
-  font-size: 2em;
-}
 
 section {
   padding: 2em;
@@ -132,17 +124,19 @@ section {
 /* MOBILE STYLING */
 
 @media only screen and (max-width: 786px) {
-  .about-content {
+  .about-content h1 {
+    font-size: 3em;
+    padding-top: 0.5em;
+  }
+
+  #about-text {
     display: flex;
-    flex-wrap: wrap-reverse;
-    height: fit-content;
-    padding-top: 3em;
-    width: 100%;
+    flex-direction: column;
   }
-  #about-text h1 {
-    text-align: center;
+  #about-text p {
+    margin: 0.6em 0.5em;
   }
-  #main_picture {
+  #about-text img {
     margin: auto;
     width: 300px;
     height: 250px;
