@@ -24,13 +24,15 @@ header.masthead {
   color: white;
 }
 
-header.masthead > .overlay {
+header.masthead>.overlay {
   padding: 5rem 0;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
+
+
 /* ABOUT SECTION */
 
 .about-content {
@@ -64,6 +66,8 @@ header.masthead > .overlay {
   float: left;
   margin-right: 1em;
 }
+
+
 /* PROJECTS SECTION */
 
 .row {
@@ -71,6 +75,9 @@ header.masthead > .overlay {
 }
 
 .col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -107,7 +114,6 @@ header.masthead > .overlay {
 
 #projects {
   padding-top: 1em;
-  background: lightgrey;
 }
 
 #projects_banner {
@@ -139,6 +145,8 @@ header.masthead > .overlay {
 section {
   padding: 1em;
 }
+
+
 /* SOCIAL MEDIA ICONS */
 
 #social {
@@ -150,7 +158,8 @@ section {
 }
 
 .social-content h3 {
-  font-size: 2em;
+  margin: .5em;
+  font-size: 1.8em;
 }
 
 .social-content {
@@ -160,10 +169,14 @@ section {
   text-align: center;
 }
 
+.icons {
+  margin-bottom: .5em;
+}
+
 .icons img {
-  height: 46px;
-  width: 46px;
-  margin: 1em;
+  height: 35px;
+  width: 35px;
+  margin: .5em;
 }
 
 .icons a {
@@ -174,6 +187,8 @@ section {
   opacity: 0.5;
   cursor: pointer;
 }
+
+
 /* FOOTER  */
 
 footer {
@@ -182,6 +197,8 @@ footer {
   justify-content: center;
   height: 3em;
 }
+
+
 /* MOBILE STYLING */
 
 @media only screen and (max-width: 768px) {
@@ -210,11 +227,10 @@ footer {
   .col-md-6 p {
     width: 100%;
   }
-  .social-content h3 {
-    font-size: 1.8em;
-  }
   .invert {
     flex-direction: column-reverse;
   }
 }
+
+
 /* END MOBILE STYLING */
