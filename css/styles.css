@@ -32,7 +32,6 @@ header.masthead>.overlay {
   text-align: center;
 }
 
-
 /* ABOUT SECTION */
 
 .about-content {
@@ -42,9 +41,12 @@ header.masthead>.overlay {
   font-family: "Playfair Display", serif;
 }
 
+.heading {
+  text-align: center;
+}
+
 .about-content h1 {
   font-size: 2em;
-  text-align: center;
 }
 
 #about-text {
@@ -66,7 +68,6 @@ header.masthead>.overlay {
   float: left;
   margin-right: 1em;
 }
-
 
 /* PROJECTS SECTION */
 
@@ -146,7 +147,6 @@ section {
   padding: 1em;
 }
 
-
 /* SOCIAL MEDIA ICONS */
 
 #social {
@@ -188,7 +188,6 @@ section {
   cursor: pointer;
 }
 
-
 /* FOOTER  */
 
 footer {
@@ -197,7 +196,6 @@ footer {
   justify-content: center;
   height: 2em;
 }
-
 
 /* MOBILE STYLING */
 
@@ -230,6 +228,5 @@ footer {
     flex-direction: column-reverse;
   }
 }
-
 
 /* END MOBILE STYLING */
