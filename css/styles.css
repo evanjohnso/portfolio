@@ -41,7 +41,7 @@ header.masthead>.overlay {
   font-family: "Playfair Display", serif;
 }
 
-.center {
+.heading {
   text-align: center;
 }
 
@@ -69,7 +69,7 @@ header.masthead>.overlay {
   margin-right: 1em;
 }
 
-<<<<<<< HEAD=======>>>>>>>basein
+<<<<<<< HEAD <<<<<<< HEAD=======>>>>>>>basein=======>>>>>>>master
 /* PROJECTS SECTION */
 
 .row {
@@ -148,7 +148,6 @@ section {
   padding: 1em;
 }
 
-<<<<<<< HEAD=======>>>>>>>basein
 /* SOCIAL MEDIA ICONS */
 
 #social {
@@ -190,7 +189,6 @@ section {
   cursor: pointer;
 }
 
-<<<<<<< HEAD=======>>>>>>>basein
 /* FOOTER  */
 
 footer {
@@ -200,7 +198,6 @@ footer {
   height: 2em;
 }
 
-<<<<<<< HEAD=======>>>>>>>basein
 /* MOBILE STYLING */
 
 @media only screen and (max-width: 768px) {
@@ -233,5 +230,4 @@ footer {
   }
 }
 
-<<<<<<< HEAD=======>>>>>>>basein
 /* END MOBILE STYLING */
