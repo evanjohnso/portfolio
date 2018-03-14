@@ -44,6 +44,7 @@ header.masthead > .overlay {
   font-size: 2em;
   text-align: center;
 }
+<<<<<<< HEAD
 
 #about-text {
   width: 90%;
@@ -57,6 +58,17 @@ header.masthead > .overlay {
 }
 
 .about-content hr {
+=======
+#about-text a {
+  text-decoration: underline;
+  color: lightblue;
+}
+#about-text a:hover {
+  color: lightblue;
+}
+
+#about-text hr {
+>>>>>>> 219c2d8... fix about text css grab from class to ID
   background-color: lightblue;
 }
 
@@ -66,12 +78,29 @@ header.masthead > .overlay {
 }
 /* PROJECTS SECTION */
 
+<<<<<<< HEAD
 .row {
   margin: 2em;
 }
 
 .col-md-6 {
   text-align: center;
+=======
+#projects_container {
+  padding: 0;
+  background: lightgrey;
+}
+
+#projects {
+  width: 100%;
+  text-align: center;
+  background-color: red;
+}
+
+.img_description {
+  transition: 0.4s;
+  transform: translateY(1em);
+>>>>>>> 219c2d8... fix about text css grab from class to ID
 }
 
 .col-md-6 p {
